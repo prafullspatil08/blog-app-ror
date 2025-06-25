@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
 
   resources :posts
+  resources :feedbacks
   resources :users, only: [ :index, :update ]
   get "/audits", to: "audits#index"
   post "/impersonate/:id", to: "impersonations#create"
